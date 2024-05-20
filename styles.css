@@ -27,17 +27,15 @@ button {
 
 /* base styles */
 html {
-	--accent-color: #11a2f3;
-	--accent-color-dark: #0d8fda;
-
+	--accent-color: #8c53ff;
+	--accent-color-light: #8248f5;
 	overflow-x: hidden;
 }
 
 body {
 	font-family: "Poppins", sans-serif;
 	color: #292c33;
-	background-color: #eeeff3;
-	/* overflow-x: hidden; */
+	background-color: #fafafa;
 	position: relative;
 }
 
@@ -71,7 +69,7 @@ body {
 
 .link {
 	font-size: 14px;
-	color: rgba(255, 255, 255, 0.7);
+	color: rgba(255, 255, 255, 1);
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	transition: all 0.2s;
@@ -82,7 +80,8 @@ body {
 }
 
 .link--btn {
-	color: #292c33;
+	color: var(--accent-color);
+	font-weight: 400;
 	background-color: #ffffff;
 	padding: 10px 18px;
 	border-radius: 10px;
@@ -90,12 +89,11 @@ body {
 }
 
 .link--btn:hover {
-	background-color: #ffffff;
+	background-color: #eeeff3;
 	color: #292c33;
 }
 
 /* main card */
-
 .main {
 	max-width: 1150px;
 	background-color: #fff;
@@ -110,16 +108,15 @@ body {
 /* INTRO SECTION */
 .intro {
 	display: flex;
-	border-bottom: 1px solid #292c33;
 	align-items: center;
 	justify-content: space-around;
-	height: 550px;
-	/* background-color: #000; */
+	/* height: 550px; */
+	background-color: #f3f5fa;
 }
 
 .search {
 	/* background-color: #f3f5fa; */
-	padding-bottom: 15px;
+	padding: 80px 0;
 
 	display: flex;
 	flex-direction: column;
@@ -128,7 +125,7 @@ body {
 }
 
 .first-heading {
-	font-size: 38px;
+	font-size: 40px;
 	font-weight: 500;
 	margin-bottom: 30px;
 	line-height: 1.1;
@@ -136,9 +133,8 @@ body {
 }
 
 .emphasis {
-	font-style: italic;
 	font-weight: 700;
-	text-decoration: underline;
+	color: var(--accent-color);
 }
 
 .form {
@@ -152,13 +148,13 @@ body {
 	padding-left: 53px;
 	font-size: 17px;
 	border-radius: 20px;
-	/* border: 1px solid rgb(197, 197, 197); */
+	border: 1px solid rgb(140, 83, 255, 0.4);
 	margin-bottom: 12px;
 }
 
 .input-icon {
 	font-size: 17px;
-	color: #adb4c2;
+	color: rgb(140, 83, 255, 0.5);
 	position: absolute;
 }
 
@@ -169,6 +165,11 @@ body {
 
 .input-icon:nth-of-type(2) {
 	top: 95px;
+	left: 22px;
+}
+
+.input-icon:nth-of-type(3) {
+	top: 168px;
 	left: 22px;
 }
 
@@ -187,7 +188,7 @@ body {
 
 .btn:hover {
 	cursor: pointer;
-	background: var(--accent-color-dark);
+	background: var(--accent-color-light);
 }
 
 .photo {
@@ -201,10 +202,16 @@ body {
 }
 
 /* cities	   */
+.places {
+	padding: 35px 0;
+	text-align: center;
+	border-bottom: 1px solid #f2f3f8;
+}
 
 .cities {
 	display: flex;
-	border-bottom: 1px solid #292c33;
+	align-items: center;
+	justify-content: space-around;
 }
 
 .city {
@@ -212,14 +219,12 @@ body {
 	flex-direction: column;
 	align-items: center;
 	padding: 12px;
-}
-
-.places--title {
-	text-align: center;
+	font-size: 13px;
 }
 
 .city--logo {
 	height: 60px;
+	opacity: 0.8;
 }
 
 /* HOW SECTION */
@@ -247,7 +252,7 @@ body {
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .steps {
@@ -274,18 +279,18 @@ body {
 }
 
 .step:nth-child(1) .step-icon {
-	background-color: #fdf6de;
-	color: #f5ca36;
+	background-color: rgb(140, 82, 255, 0.2);
+	color: #8c52ff;
 }
 
 .step:nth-child(2) .step-icon {
-	background-color: #ffdeec;
-	color: #da196a;
+	background-color: rgb(70, 137, 177, 0.2);
+	color: #4689b1;
 }
 
 .step:nth-child(3) .step-icon {
-	background-color: #e9e5ff;
-	color: #4d31e4;
+	background-color: rgb(0, 191, 99, 0.2);
+	color: #00bf63;
 }
 
 .third-heading {
